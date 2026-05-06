@@ -4,83 +4,288 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pertemuan 2</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    
+  
     <header>
-        <p>This is header</p>
-        <div>
-            <a href = "#About">About</a>
-            <a href = "#Project">Project</a>
-            <a href = "#Contact">Contact</a>
-            <a href = "#Skills">Skills</a>
-        </div>
+        <h1>Ivan<span class="accent">.</span></h1>
+        <nav>
+            <a href = "#about-me" class="aktif">About</a>
+            <a href = "#project">Project</a>
+            <a href = "#contact">Contact</a>
+            <a href = "#skill">Skill</a>
+        </nav>
     </header>
 
-    <main>
-        <section id = "About">
-            <h2>About Me</h2>
-            <p>Hello my name is Ivan</p>
-            
-            <p>I'am a software engineer from Informatics UISI</p>
+<main>
+      <section id="about-me">
+        <div class="hero-kiri">
+          <span class="badge">Available for work</span>
+          <p class="greeting">Halo, I'm</p>
+          <h2>Ivan</h2>
+          <p class="role">I'm a Software Engineer</p>
+          <p class="hero-desc">
+            I build clean, performant web applications with modern technologies.
+            Let's turn your ideas into reality.
+          </p>
+          <div class="hero-tombol">
+            <button class="btn-primary">Got a project?</button>
+            <button class="btn-outline">My resume</button>
+          </div>
+        </div>
+        <div class="hero-kanan">
+          <div class="hero-img-wrapper">
+            <img src="uisi.png" alt="foto Ivan" />
+          </div>
+        </div>
+      </section>
 
-            <img src="uisi.png" height="240" width="240" alt="">
-        </section>
+      <section id="project">
+        <span class="section-label">Portfolio</span>
+        <h2>My Projects</h2>
+        <p class="section-desc">
+          A selection of recent work I've been involved in.
+        </p>
 
-        <section id = "Project">
-            <h2>My Project</h2>
+        <div class="project-grid">
+          <article>
+            <div class="project-img">
+              <img src="uisi.png" alt="logo uisi" />
+            </div>
+            <div class="project-body">
+              <h3>Company Profile</h3>
+              <p>
+                Website company profile untuk program studi Informatika UISI.
+              </p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JS</span>
+              </div>
+              <button>Lihat Project</button>
+            </div>
+          </article>
 
-            <article>
-                <img src="uisi.png" height="240" width="240" alt="">
-                <h3>Company Profile</h3>
-                <p>This is Website Company Profile</p>
-                <button>Lihat Project</button>
-            </article>
-        </section>
+          <article>
+            <div class="project-img">
+              <img src="images-pos.jpeg" alt="logo inventory" />
+            </div>
+            <div class="project-body">
+              <h3>Website Inventory</h3>
+              <p>Sistem manajemen inventory berbasis web untuk perusahaan.</p>
+              <div class="project-tags">
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>Bootstrap</span>
+              </div>
+              <button>Lihat Project</button>
+            </div>
+          </article>
 
-        <section id = "Skills">
+          <article>
+            <div class="project-img">
+              <img src="uisi.png" alt="logo uisi" />
+            </div>
+            <div class="project-body">
+              <h3>Company Profile</h3>
+              <p>
+                Website company profile untuk program studi Informatika UISI.
+              </p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JS</span>
+              </div>
+              <button>Lihat Project</button>
+            </div>
+          </article>
 
-            <h2>My Skills</h2>
+          <article>
+            <div class="project-img">
+              <img src="images-pos.jpeg" alt="logo inventory" />
+            </div>
+            <div class="project-body">
+              <h3>Website Inventory</h3>
+              <p>Sistem manajemen inventory berbasis web untuk perusahaan.</p>
+              <div class="project-tags">
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>Bootstrap</span>
+              </div>
+              <button>Lihat Project</button>
+            </div>
+          </article>
+        </div>
+      </section>
 
+      <section id="resume">
+
+        <h2>Riwayat Pendidikan</h2>
+        <div class="card">
+            <p><b>S1 Informatika - UISI</b> (2024 - Sekarang)</p>
+            <p><b>SMKN 1 Cerme - Gresik</b> (2021 - 2024)</p>
+        </div>
+
+        <h2>Riwayat Pekerjaan</h2>
+        <div class="card">
+            <p><b>Junior Web Dev (Intern)</b> - PT. Mitra Teknologi Sejati</p>
             <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JAVASCRIPT</li>
+                <li>Slicing UI Design ke HTML/CSS</li>
+                <li>Maintenance fitur website</li>
             </ul>
-        </section>
+        </div>
+    </section>
 
-        <section id = "Contact">
-            <h2>Contact</h2>
+      <section id="skill">
+        <span class="section-label">Expertise</span>
+        <h2>My Skills</h2>
+        <p class="section-desc">Technologies I work with on a daily basis.</p>
+        <ul>
+          <li>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+              alt="html" />
+            <p>HTML</p>
+          </li>
+          <li>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+              alt="css" />
+            <p>CSS</p>
+          </li>
+          <li>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              alt="javascript" />
+            <p>JavaScript</p>
+          </li>
+          <li>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+              alt="react" />
+            <p>React</p>
+          </li>
+          <li>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+              alt="nodejs" />
+            <p>Node.js</p>
+          </li>
+          <li>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+              alt="php" />
+            <p>PHP</p>
+          </li>
+          <li>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+              alt="mysql" />
+            <p>MySQL</p>
+          </li>
+          <li>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+              alt="git" />
+            <p>Git</p>
+          </li>
+        </ul>
+      </section>
 
-            <article>
-                <p>Phone : </p>
-                <p>Email : </p>
-                <p>Instagram : </p>
-            </article>
+      <section id="contact">
+        <span class="section-label">Get in Touch</span>
+        <h2>Contact Me</h2>
+        <p class="section-desc">
+          Have a question or want to work together? Drop me a message!
+        </p>
 
-            <h3>Send Me Message</h3>
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <h3>Let's connect</h3>
+            <div class="info-item">
+              <span class="info-icon">&#9993;</span>
+              <div>
+                <p class="info-label">Email</p>
+                <p>sayfuddinivan@gmail.com</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">&#9742;</span>
+              <div>
+                <p class="info-label">Phone</p>
+                <p>+62 813 5844 4217</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">&#9873;</span>
+              <div>
+                <p class="info-label">Location</p>
+                <p>Gresik, Indonesia</p>
+              </div>
+            </div>
+          </div>
 
+          <div class="contact-form">
+            <h3>Send me a message</h3>
             <form action="">
-
-                <div>
-                    <label for="name">Nama : </label>
-                    <input type="text" id="name" name = "name" placeholder="Input Your Name">
-                </div>
-                <br>
-                <div>
-                    <label for="Message">Message : </label>
-                    <input type="text" id="Message" Message = "Message" placeholder="Input Your Message">
-                </div>
-                <br>
-                <button>Submit</button>
+              <div>
+                <label for="name">Nama</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Masukkan nama anda" />
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Masukkan email anda" />
+              </div>
+              <div>
+                <label for="message">Pesan</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  placeholder="Masukkan pesan anda"></textarea>
+              </div>
+              <button type="submit">Kirim Pesan</button>
             </form>
-        </section>
-
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <p>Copyright by author</p>
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>Ivan Sayfuddin<span class="accent">.</span></h3>
+          <p>
+            Software Engineer based in Gresik, building modern web
+            experiences.
+          </p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="#about-me">About</a>
+          <a href="#project">Projects</a>
+          <a href="#skill">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-social">
+          <h4>Follow Me</h4>
+          <a href="#">GitHub</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Instagram</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ivan Sayfuddin. All rights reserved.</p>
+      </div>
     </footer>
-
-</body>
+  </body>
 </html>
